@@ -352,7 +352,7 @@ svg.iso{width:100%;height:auto;max-height:min(330px,40svh);margin-top:4px}
 .blq-cab h3 b{font-family:var(--display);font-weight:700}
 .blq-cab .et{display:block;margin-bottom:4px}
 .modera{display:flex;align-items:center;gap:14px;min-width:0}
-.modera .av{flex:none;width:58px;height:58px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--fondo),0 0 0 4px var(--rojo)}
+.modera .av{flex:none;width:44px;height:44px;border-radius:50%;object-fit:cover}
 .modera .av.vacio{display:grid;place-items:center;background:var(--panel2);color:var(--tenue);font-weight:700;box-shadow:0 0 0 2px var(--fondo),0 0 0 4px var(--linea2)}
 .modera small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rojoc)}
 .modera .lnk{font-size:1.02rem}
@@ -367,7 +367,6 @@ svg.iso{width:100%;height:auto;max-height:min(330px,40svh);margin-top:4px}
 .ch{display:inline-flex;align-items:center;gap:12px;padding:6px 18px 6px 6px;border-radius:999px;border:1px solid var(--linea);background:rgba(201,207,238,.03);cursor:pointer;text-align:left;transition:border-color .35s,background-color .35s,transform .45s var(--ease)}
 .ch:hover{border-color:rgba(255,90,90,.55);background:rgba(255,43,43,.06);transform:translateY(-2px)}
 .ch img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
-.ch.imef img{box-shadow:0 0 0 2px var(--fondo),0 0 0 3.5px var(--rojo)}
 .ch b{display:block;font-size:.95rem;font-weight:600;line-height:1.25}
 .ch small{display:block;font-size:.78rem;color:var(--lav);line-height:1.3}
 .pend{display:inline-flex;align-items:center;gap:12px;color:var(--tenue);font-size:.95rem;margin-top:14px}
@@ -388,6 +387,11 @@ svg.iso{width:100%;height:auto;max-height:min(330px,40svh);margin-top:4px}
 .panel-izq .md{display:flex;align-items:center;gap:10px;margin-top:20px;font-size:.86rem;color:var(--tenue)}
 .panel-izq .md img{width:34px;height:34px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--fondo),0 0 0 3.5px var(--rojo)}
 .panel-izq .md b{display:block;color:#fff;font-weight:600}
+.ses-l{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:10px}
+.ses-l li{display:grid;grid-template-columns:3.4em minmax(0,1fr);gap:10px;font-size:.95rem;line-height:1.35}
+.ses-l li b{color:var(--lav);font-weight:600}
+.ses-l li small{display:block;color:var(--tenue);font-size:.82rem;margin-top:2px}
+.pc-info .et{font-size:.66rem;letter-spacing:.18em;margin-bottom:2px}
 .pon-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .pc{position:relative;display:flex;flex-direction:column;border-radius:24px;overflow:hidden;background:var(--panel);border:1px solid var(--linea);transition:transform .6s var(--ease),border-color .5s,box-shadow .6s var(--ease)}
 .pc::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;border-radius:inherit;opacity:0;transition:opacity .4s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0%),rgba(201,207,238,.14),transparent 60%)}
@@ -640,7 +644,7 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
   <div class="wrap">
     <a class="logo" href="#inicio" aria-label="IMEF Grupo Monterrey, ir al inicio"><img class="imef" src="img/imef.png" width="360" height="248" alt="IMEF Grupo Monterrey"><span class="sep-l" aria-hidden="true"></span><img class="marca" src="img/titulo.png" width="700" height="62" alt="" aria-hidden="true"></a>
     <nav class="links" aria-label="Secciones">
-      <a href="#foro">El foro</a><a href="#conducen">Quién pregunta</a><a href="#programa">Programa</a><a href="#ponentes">Ponentes</a><a href="#videos">Videos</a><a href="#costos">Costos</a><a href="#sede">Sede</a>
+      <a href="#foro">El foro</a><a href="#programa">Programa</a><a href="#ponentes">Ponentes</a><a href="#videos">Videos</a><a href="#costos">Costos</a><a href="#sede">Sede</a>
     </nav>
     <div class="acc">
       <a class="btn prim sm solo reg-nav" data-registro href="#costos">Registrarme</a>
@@ -652,7 +656,7 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
 
 <div class="menu" id="menu" hidden>
   <nav aria-label="Menú de secciones">
-    <a href="#video">Video <small>1:29</small></a><a href="#foro">El foro <small>La meta</small></a><a href="#conducen">Quién pregunta <small>IMEF</small></a><a href="#programa">Programa <small>8:00 h</small></a><a href="#ponentes">Ponentes <small>4 paneles</small></a><a href="#videos">Videos <small>Semblanzas</small></a><a href="#costos">Costos <small>Desde $600</small></a><a href="#sede">Sede <small>San Pedro</small></a>
+    <a href="#video">Video <small>1:30</small></a><a href="#foro">El foro <small>La meta</small></a><a href="#programa">Programa <small>8:00 h</small></a><a href="#ponentes">Ponentes <small>Por bloque</small></a><a href="#videos">Videos <small>Semblanzas</small></a><a href="#costos">Costos <small>Desde $600</small></a><a href="#sede">Sede <small>San Pedro</small></a>
   </nav>
   <div class="menu-pie">
     <a class="btn prim" data-registro href="#costos">Registrarme al foro<span class="ico"><svg aria-hidden="true"><use href="#i-flecha"/></svg></span></a>
@@ -742,7 +746,7 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
     </div>
     <div class="marco" id="promoMarco">
       <video id="promoVid" playsinline preload="none" poster="video/promo-general.jpg"><source src="video/promo-general.mp4" type="video/mp4"></video>
-      <button class="tapa" type="button" id="promoTapa" aria-label="Reproducir el video promocional del foro"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="rot"><b>Foro Fiscal IMEF · Reformas Fiscales 2027</b><small>Video promocional · 1:29 · con sonido</small></span></button>
+      <button class="tapa" type="button" id="promoTapa" aria-label="Reproducir el video promocional del foro"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="rot"><b>Foro Fiscal IMEF · Reformas Fiscales 2027</b><small>Video promocional · 1:30 · con sonido</small></span></button>
       <p class="aviso-video" id="promoAviso" hidden><span>Muy pronto</span><em>El video promocional se publica en estos días. Mientras, <a href="#videos">conoce a los ponentes en video</a>.</em></p>
     </div>
     <div class="pie"><span>Lo presenta Basham, Ringe y Correa, firma legal de primer nivel desde 1912.</span><a class="lnk" href="#videos">Ver las semblanzas en video</a></div>
@@ -807,82 +811,11 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
   </div>
 </section>
 
-<section class="seccion imef-sec" id="conducen" aria-labelledby="t-imef">
-  <div class="wrap">
-    <div class="cab">
-      <h2 id="t-imef" data-palabras>Las preguntas las hace <b>la empresa</b></h2>
-      <p class="rv">Cinco socios de IMEF Grupo Monterrey, desde la dirección de finanzas e impuestos de sus empresas y firmas, conducen el foro. Sacan a los especialistas de lo técnico y llevan cada respuesta a lo que se juega una empresa: flujo, inversión y resultado.</p>
-    </div>
-    <div class="imef-grid">
-      <article class="ic grande">
-        <div class="ic-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/concepcion.webp" width="720" height="720" alt="María Concepción del Alto Hernández" loading="lazy" decoding="async"></div>
-        <div class="ic-info">
-          <span class="et">Inaugura el foro · 8:00 h</span>
-          <h3>María Concepción del Alto Hernández</h3>
-          <p class="cargo">Presidenta<br><span class="emp">IMEF Grupo Monterrey</span></p>
-          <p class="sub">Doctora en Finanzas por la Universidad de Tulane · Consejera independiente</p>
-          <p class="mirada"><span>Su mirada</span>Finanzas corporativas, inversión y gobierno corporativo</p>
-          
-          <button class="abrir" type="button" data-p="concepcion" aria-label="Leer la semblanza de María Concepción del Alto Hernández">Leer semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button>
-        </div>
-      </article>
-      <article class="ic grande">
-        <div class="ic-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/mancilla.webp" width="720" height="720" alt="Héctor Javier Mancilla López" loading="lazy" decoding="async"></div>
-        <div class="ic-info">
-          <span class="et">Inaugura el foro · 8:00 h</span>
-          <h3>Héctor Javier Mancilla López</h3>
-          <p class="cargo">Socio de consultoría fiscal<br><span class="emp">Crowe México</span></p>
-          <p class="sub">Expresidente de IMEF Grupo Monterrey (2024–2025)</p>
-          <p class="mirada"><span>Su mirada</span>Impuestos corporativos y la relación de la empresa con el SAT</p>
-          
-          <button class="abrir" type="button" data-p="mancilla" aria-label="Leer la semblanza de Héctor Javier Mancilla López">Leer semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button>
-        </div>
-      </article>
-      <article class="ic">
-        <div class="ic-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/leon.webp" width="720" height="720" alt="Felipe León Gámez" loading="lazy" decoding="async"></div>
-        <div class="ic-info">
-          <span class="et">Modera el bloque 1 · 8:15 a 9:15 h</span>
-          <h3>Felipe León Gámez</h3>
-          <p class="cargo">Socio retirado de Impuestos y Servicios Legales, <span class="emp">Deloitte</span><br>Consultor independiente</p>
-          <p class="sub">Vocal del Consejo Directivo de IMEF Grupo Monterrey</p>
-          <p class="mirada"><span>Su mirada</span>Cuatro décadas de asesoría fiscal a empresas</p>
-          <p class="conduce"><span>Conduce</span>Contexto económico de la reforma · Ley del Impuesto sobre la Renta</p>
-          <button class="abrir" type="button" data-p="leon" aria-label="Leer la semblanza de Felipe León Gámez">Leer semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button>
-        </div>
-      </article>
-      <article class="ic">
-        <div class="ic-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/garza.webp" width="720" height="720" alt="David Garza Rodríguez" loading="lazy" decoding="async"></div>
-        <div class="ic-info">
-          <span class="et">Modera el bloque 2 · 9:30 a 10:45 h</span>
-          <h3>David Garza Rodríguez</h3>
-          <p class="cargo">Gerente Fiscal y de Comercio Exterior<br><span class="emp">Grupo Cuprum</span></p>
-          <p class="sub">Socio de IMEF Grupo Monterrey</p>
-          <p class="mirada"><span>Su mirada</span>La política fiscal y aduanera desde dentro de un grupo industrial</p>
-          <p class="conduce"><span>Conduce</span>Justicia fiscal y mecanismos alternativos · Reforma Ley Aduanera: subvaluación</p>
-          <button class="abrir" type="button" data-p="garza" aria-label="Leer la semblanza de David Garza Rodríguez">Leer semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button>
-        </div>
-      </article>
-      <article class="ic">
-        <div class="ic-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/reyna.webp" width="720" height="720" alt="Fernando Javier Reyna Salas" loading="lazy" decoding="async"></div>
-        <div class="ic-info">
-          <span class="et">Cierra el foro · 11:15 h</span>
-          <h3>Fernando Javier Reyna Salas</h3>
-          <p class="cargo">Socio de Impuestos y Servicios Legales<br><span class="emp">Deloitte</span></p>
-          <p class="sub">Miembro del Consejo Directivo de IMEF Grupo Monterrey</p>
-          <p class="mirada"><span>Su mirada</span>Estructuras corporativas y patrimoniales, fusiones y adquisiciones</p>
-          
-          <button class="abrir" type="button" data-p="reyna" aria-label="Leer la semblanza de Fernando Javier Reyna Salas">Leer semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="seccion" id="programa" aria-labelledby="t-prog" style="padding-top:0">
   <div class="wrap">
     <div class="cab">
       <h2 id="t-prog" data-palabras>Una mañana, <b>tres bloques</b></h2>
-      <p class="rv">Martes 17 de noviembre. Cada bloque lo conduce un socio de IMEF. Toca un nombre para leer su semblanza.</p>
+      <p class="rv">Martes 17 de noviembre, en tres bloques. Toca un nombre para leer su semblanza.</p>
     </div>
     <div class="agenda" id="agenda">
       <div class="riel" aria-hidden="true"></div><div class="luz" id="luz" aria-hidden="true"></div>
@@ -910,92 +843,117 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
 <section class="seccion" id="ponentes" aria-labelledby="t-pon" style="padding-top:0">
   <div class="wrap">
     <div class="cab">
-      <h2 id="t-pon" data-palabras>Los especialistas <b>en la mesa</b></h2>
-      <p class="rv">Magistratura del Tribunal Federal de Justicia Administrativa, Prodecon y la práctica fiscal de Basham, Ringe y Correa, firma de primer nivel desde 1912. Toca una tarjeta para leer la semblanza.</p>
+      <h2 id="t-pon" data-palabras>Quiénes están <b>en la mesa</b></h2>
+      <p class="rv">La magistratura del Tribunal Federal de Justicia Administrativa, Prodecon, la práctica fiscal de Basham, Ringe y Correa y los socios de IMEF Grupo Monterrey que inauguran, moderan y cierran el foro. Un solo equipo, en el orden del programa. Toca una tarjeta para leer la semblanza.</p>
     </div>
     <div class="paneles">
       <div class="panel-fila">
-        <div class="panel-izq rv"><span class="et">8:30 h · Panel</span><h3>Ley del Impuesto sobre la Renta</h3><p class="q">Menos deducciones, más control.</p><p class="md"><img src="img/p/leon-av.webp" width="192" height="192" alt="" loading="lazy" decoding="async"><span>Modera<b>Felipe León Gámez</b></span></p></div>
+        <div class="panel-izq rv"><span class="et">Primer bloque · 8:00 a 9:15 h</span><h3>Contexto económico e <b>ISR</b></h3><ul class="ses-l"><li><b>8:00</b><span>Inauguración y bienvenida</span></li><li><b>8:15</b><span>Contexto económico de la reforma<small>Economista socio de IMEF, por confirmar</small></span></li><li><b>8:30</b><span>Ley del Impuesto sobre la Renta</span></li></ul></div>
         <div class="pon-grid">
           <article class="pc">
+            <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/concepcion-s.webp" srcset="img/p/concepcion-s.webp 440w, img/p/concepcion.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="María Concepción del Alto Hernández" loading="lazy" decoding="async"></div>
+            <div class="pc-info"><span class="et">Inauguración</span><h4>María Concepción del Alto Hernández</h4><span class="cg">Presidenta</span><span class="og">IMEF Grupo Monterrey</span>
+              <div class="pc-acc"><button class="abrir" type="button" data-p="concepcion" aria-label="Leer la semblanza de María Concepción del Alto Hernández">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="concepcion" aria-label="Ver la semblanza en video de María Concepción del Alto Hernández"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/mancilla-s.webp" srcset="img/p/mancilla-s.webp 440w, img/p/mancilla.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Héctor Javier Mancilla López" loading="lazy" decoding="async"></div>
+            <div class="pc-info"><span class="et">Inauguración</span><h4>Héctor Javier Mancilla López</h4><span class="cg">Socio de consultoría fiscal</span><span class="og">Crowe México</span>
+              <div class="pc-acc"><button class="abrir" type="button" data-p="mancilla" aria-label="Leer la semblanza de Héctor Javier Mancilla López">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="mancilla" aria-label="Ver la semblanza en video de Héctor Javier Mancilla López"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/leon-s.webp" srcset="img/p/leon-s.webp 440w, img/p/leon.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Felipe León Gámez" loading="lazy" decoding="async"></div>
+            <div class="pc-info"><span class="et">Modera el bloque</span><h4>Felipe León Gámez</h4><span class="cg">Socio retirado de Impuestos y Servicios Legales, Deloitte · Consultor independiente</span>
+              <div class="pc-acc"><button class="abrir" type="button" data-p="leon" aria-label="Leer la semblanza de Felipe León Gámez">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="leon" aria-label="Ver la semblanza en video de Felipe León Gámez"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
+            </div>
+          </article>
+          <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/barrera-s.webp" srcset="img/p/barrera-s.webp 440w, img/p/barrera.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Alejandro Barrera Fernández" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Alejandro Barrera Fernández</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel ISR</span><h4>Alejandro Barrera Fernández</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="barrera" aria-label="Leer la semblanza de Alejandro Barrera Fernández">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="barrera" aria-label="Ver la semblanza en video de Alejandro Barrera Fernández"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/torres-s.webp" srcset="img/p/torres-s.webp 440w, img/p/torres.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Luisa Fernanda Torres Hernández" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Luisa Fernanda Torres Hernández</h4><span class="cg">Asociada</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel ISR</span><h4>Luisa Fernanda Torres Hernández</h4><span class="cg">Asociada</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="torres" aria-label="Leer la semblanza de Luisa Fernanda Torres Hernández">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="torres" aria-label="Ver la semblanza en video de Luisa Fernanda Torres Hernández"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/hernandez-s.webp" srcset="img/p/hernandez-s.webp 440w, img/p/hernandez.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Marcelo Hernández" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Marcelo Hernández</h4><span class="cg">Asociado</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel ISR</span><h4>Marcelo Hernández</h4><span class="cg">Asociado</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="hernandez" aria-label="Leer la semblanza de Marcelo Hernández">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="hernandez" aria-label="Ver la semblanza en video de Marcelo Hernández"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
         </div>
       </div>
       <div class="panel-fila">
-        <div class="panel-izq rv"><span class="et">9:30 h · Panel</span><h3>Justicia fiscal y mecanismos alternativos</h3><p class="q">Antes del litigio, hay caminos.</p><p class="md"><img src="img/p/garza-av.webp" width="192" height="192" alt="" loading="lazy" decoding="async"><span>Modera<b>David Garza Rodríguez</b></span></p></div>
+        <div class="panel-izq rv"><span class="et">Segundo bloque · 9:30 a 10:45 h</span><h3>Justicia fiscal y <b>Ley Aduanera</b></h3><ul class="ses-l"><li><b>9:30</b><span>Justicia fiscal y mecanismos alternativos</span></li><li><b>10:15</b><span>Reforma Ley Aduanera: subvaluación</span></li></ul></div>
         <div class="pon-grid">
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/rosas-s.webp" srcset="img/p/rosas-s.webp 440w, img/p/rosas.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Mag. María Alejandra Rosas Ramírez" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Mag. María Alejandra Rosas Ramírez</h4><span class="cg">Magistrada, Segunda Sala Regional del Noreste</span><span class="og">TFJA</span>
+            <div class="pc-info"><span class="et">Panel Justicia fiscal</span><h4>Mag. María Alejandra Rosas Ramírez</h4><span class="cg">Magistrada, Segunda Sala Regional del Noreste</span><span class="og">TFJA</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="rosas" aria-label="Leer la semblanza de Mag. María Alejandra Rosas Ramírez">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="rosas" aria-label="Ver la semblanza en video de Mag. María Alejandra Rosas Ramírez"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/garcia-s.webp" srcset="img/p/garcia-s.webp 440w, img/p/garcia.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Dra. Sara Carolina García Osuna" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Dra. Sara Carolina García Osuna</h4><span class="cg">Delegada en Nuevo León</span><span class="og">Prodecon</span>
+            <div class="pc-info"><span class="et">Panel Justicia fiscal</span><h4>Dra. Sara Carolina García Osuna</h4><span class="cg">Delegada en Nuevo León</span><span class="og">Prodecon</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="garcia" aria-label="Leer la semblanza de Dra. Sara Carolina García Osuna">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="garcia" aria-label="Ver la semblanza en video de Dra. Sara Carolina García Osuna"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/tuiran-s.webp" srcset="img/p/tuiran-s.webp 440w, img/p/tuiran.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="José Miguel Tuirán Salas" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>José Miguel Tuirán Salas</h4><span class="cg">Consejero</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel Justicia fiscal</span><h4>José Miguel Tuirán Salas</h4><span class="cg">Consejero</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="tuiran" aria-label="Leer la semblanza de José Miguel Tuirán Salas">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="tuiran" aria-label="Ver la semblanza en video de José Miguel Tuirán Salas"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
-        </div>
-      </div>
-      <div class="panel-fila">
-        <div class="panel-izq rv"><span class="et">10:15 h · Panel</span><h3>Reforma Ley Aduanera: subvaluación</h3><p class="q">El valor declarado, bajo la lupa.</p><p class="md"><img src="img/p/garza-av.webp" width="192" height="192" alt="" loading="lazy" decoding="async"><span>Modera<b>David Garza Rodríguez</b></span></p></div>
-        <div class="pon-grid">
+          <article class="pc">
+            <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/garza-s.webp" srcset="img/p/garza-s.webp 440w, img/p/garza.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="David Garza Rodríguez" loading="lazy" decoding="async"></div>
+            <div class="pc-info"><span class="et">Modera el bloque</span><h4>David Garza Rodríguez</h4><span class="cg">Gerente Fiscal y de Comercio Exterior</span><span class="og">Grupo Cuprum</span>
+              <div class="pc-acc"><button class="abrir" type="button" data-p="garza" aria-label="Leer la semblanza de David Garza Rodríguez">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="garza" aria-label="Ver la semblanza en video de David Garza Rodríguez"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
+            </div>
+          </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/barajas-s.webp" srcset="img/p/barajas-s.webp 440w, img/p/barajas.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Sergio Barajas Pérez" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Sergio Barajas Pérez</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel Ley Aduanera</span><h4>Sergio Barajas Pérez</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="barajas" aria-label="Leer la semblanza de Sergio Barajas Pérez">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="barajas" aria-label="Ver la semblanza en video de Sergio Barajas Pérez"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/martinez-s.webp" srcset="img/p/martinez-s.webp 440w, img/p/martinez.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Luis F. Martínez" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Luis F. Martínez</h4><span class="cg">Especialista en Comercio Exterior</span>
+            <div class="pc-info"><span class="et">Panel Ley Aduanera</span><h4>Luis F. Martínez</h4><span class="cg">Especialista en Comercio Exterior</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="martinez" aria-label="Leer la semblanza de Luis F. Martínez">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="martinez" aria-label="Ver la semblanza en video de Luis F. Martínez"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
         </div>
       </div>
       <div class="panel-fila">
-        <div class="panel-izq rv"><span class="et">10:45 h · Panel</span><h3>Estrategias de defensa</h3><p class="q">Si llega la revisión, ¿estás listo?</p><p class="md"><span>Modera<b>Socio de IMEF por confirmar</b></span></p></div>
+        <div class="panel-izq rv"><span class="et">Tercer bloque · 10:45 a 11:15 h</span><h3>Estrategias de <b>defensa</b></h3><ul class="ses-l"><li><b>10:45</b><span>Estrategias de defensa</span></li><li><b>11:15</b><span>Despedida</span></li></ul><p class="md"><span>Modera<b>Socio de IMEF por confirmar</b></span></p></div>
         <div class="pon-grid">
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/zenteno-s.webp" srcset="img/p/zenteno-s.webp 440w, img/p/zenteno.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Gil Alonso Zenteno García" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Gil Alonso Zenteno García</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel Defensa</span><h4>Gil Alonso Zenteno García</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="zenteno" aria-label="Leer la semblanza de Gil Alonso Zenteno García">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="zenteno" aria-label="Ver la semblanza en video de Gil Alonso Zenteno García"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/delatorre-s.webp" srcset="img/p/delatorre-s.webp 440w, img/p/delatorre.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Ramón de la Torre Medina" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>Ramón de la Torre Medina</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel Defensa</span><h4>Ramón de la Torre Medina</h4><span class="cg">Socio</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="delatorre" aria-label="Leer la semblanza de Ramón de la Torre Medina">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="delatorre" aria-label="Ver la semblanza en video de Ramón de la Torre Medina"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
           <article class="pc">
             <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/tuiran-s.webp" srcset="img/p/tuiran-s.webp 440w, img/p/tuiran.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="José Miguel Tuirán Salas" loading="lazy" decoding="async"></div>
-            <div class="pc-info"><h4>José Miguel Tuirán Salas</h4><span class="cg">Consejero</span><span class="og">Basham, Ringe y Correa</span>
+            <div class="pc-info"><span class="et">Panel Defensa</span><h4>José Miguel Tuirán Salas</h4><span class="cg">Consejero</span><span class="og">Basham, Ringe y Correa</span>
               <div class="pc-acc"><button class="abrir" type="button" data-p="tuiran" aria-label="Leer la semblanza de José Miguel Tuirán Salas">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="tuiran" aria-label="Ver la semblanza en video de José Miguel Tuirán Salas"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
+            </div>
+          </article>
+          <article class="pc">
+            <div class="pc-foto"><svg class="anillo" viewBox="0 0 155 100" aria-hidden="true"><ellipse cx="77.5" cy="50" rx="76" ry="48.5" pathLength="1"/></svg><img src="img/p/reyna-s.webp" srcset="img/p/reyna-s.webp 440w, img/p/reyna.webp 720w" sizes="(max-width:640px) 46vw, 260px" width="440" height="440" alt="Fernando Javier Reyna Salas" loading="lazy" decoding="async"></div>
+            <div class="pc-info"><span class="et">Despedida</span><h4>Fernando Javier Reyna Salas</h4><span class="cg">Socio de Impuestos y Servicios Legales</span><span class="og">Deloitte</span>
+              <div class="pc-acc"><button class="abrir" type="button" data-p="reyna" aria-label="Leer la semblanza de Fernando Javier Reyna Salas">Semblanza<span class="ico"><svg aria-hidden="true"><use href="#i-der"/></svg></span></button><button class="ver-video" type="button" data-video="reyna" aria-label="Ver la semblanza en video de Fernando Javier Reyna Salas"><svg aria-hidden="true"><use href="#i-playc"/></svg>Video</button></div>
             </div>
           </article>
         </div>
@@ -1007,8 +965,8 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
 <section class="seccion" id="videos" aria-labelledby="t-vid" style="padding-top:0">
   <div class="wrap">
     <div class="cab">
-      <h2 id="t-vid" data-palabras>Conoce a quien <b>te lo va a explicar</b></h2>
-      <p class="rv">El promo del foro y una semblanza en video de cada ponente, en menos de un minuto cada una.</p>
+      <h2 id="t-vid" data-palabras>Conoce a <b>quienes participan</b></h2>
+      <p class="rv">El promo del foro, un promo por panel y una semblanza en video de cada participante.</p>
     </div>
     <div class="vid rv">
       <div>
@@ -1137,29 +1095,28 @@ var P = {"barrera":{"n":"Alejandro Barrera Fernández","c":"Socio","org":"Basham
    persona: clave de P, para enlazar la semblanza desde la tarjeta. */
 var VIDEOS = [
   /* probar:true hace que la página revise si el MP4 existe antes de listarlo (útil para un video que todavía no se sube). */
-  {grupo:"Promo del foro", archivo:"video/promo-general.mp4", poster:"video/promo-general.jpg", titulo:"Foro Fiscal IMEF 2026", sub:"Video promocional · 1:29", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"barrera", archivo:"video/sem-barrera.mp4", poster:"video/sem-barrera.jpg", titulo:"Alejandro Barrera Fernández", sub:"Panel ISR · 8:30 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"torres", archivo:"video/sem-torres.mp4", poster:"video/sem-torres.jpg", titulo:"Luisa Fernanda Torres Hernández", sub:"Panel ISR · 8:30 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"hernandez", archivo:"video/sem-hernandez.mp4", poster:"video/sem-hernandez.jpg", titulo:"Marcelo Hernández", sub:"Panel ISR · 8:30 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"rosas", archivo:"video/sem-rosas.mp4", poster:"video/sem-rosas.jpg", titulo:"Mag. María Alejandra Rosas Ramírez", sub:"Panel Justicia fiscal · 9:30 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"garcia", archivo:"video/sem-garcia.mp4", poster:"video/sem-garcia.jpg", titulo:"Dra. Sara Carolina García Osuna", sub:"Panel Justicia fiscal · 9:30 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"tuiran", archivo:"video/sem-tuiran.mp4", poster:"video/sem-tuiran.jpg", titulo:"José Miguel Tuirán Salas", sub:"Paneles Justicia fiscal y Estrategias de defensa", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"barajas", archivo:"video/sem-barajas.mp4", poster:"video/sem-barajas.jpg", titulo:"Sergio Barajas Pérez", sub:"Panel Ley Aduanera · 10:15 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"martinez", archivo:"video/sem-martinez.mp4", poster:"video/sem-martinez.jpg", titulo:"Luis F. Martínez", sub:"Panel Ley Aduanera · 10:15 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"zenteno", archivo:"video/sem-zenteno.mp4", poster:"video/sem-zenteno.jpg", titulo:"Gil Alonso Zenteno García", sub:"Panel Estrategias de defensa · 10:45 h", listo:true},
-  {grupo:"Semblanzas de ponentes", persona:"delatorre", archivo:"video/sem-delatorre.mp4", poster:"video/sem-delatorre.jpg", titulo:"Ramón de la Torre Medina", sub:"Panel Estrategias de defensa · 10:45 h", listo:true},
-  /* Semblanzas de la gente de IMEF (en producción): cambia listo a true cuando subas el archivo */
-  {grupo:"Semblanzas de IMEF", persona:"concepcion", archivo:"video/sem-concepcion.mp4", poster:"video/sem-concepcion.jpg", titulo:"María Concepción del Alto Hernández", sub:"Inaugura el foro", listo:false},
-  {grupo:"Semblanzas de IMEF", persona:"mancilla", archivo:"video/sem-mancilla.mp4", poster:"video/sem-mancilla.jpg", titulo:"Héctor Javier Mancilla López", sub:"Inaugura el foro", listo:false},
-  {grupo:"Semblanzas de IMEF", persona:"leon", archivo:"video/sem-leon.mp4", poster:"video/sem-leon.jpg", titulo:"Felipe León Gámez", sub:"Modera el bloque 1", listo:false},
-  {grupo:"Semblanzas de IMEF", persona:"garza", archivo:"video/sem-garza.mp4", poster:"video/sem-garza.jpg", titulo:"David Garza Rodríguez", sub:"Modera el bloque 2", listo:false},
-  {grupo:"Semblanzas de IMEF", persona:"reyna", archivo:"video/sem-reyna.mp4", poster:"video/sem-reyna.jpg", titulo:"Fernando Javier Reyna Salas", sub:"Cierra el foro", listo:false},
-  /* Promos por panel (en producción) */
-  {grupo:"Promos por panel", archivo:"video/promo-isr.mp4", poster:"video/promo-isr.jpg", titulo:"Ley del Impuesto sobre la Renta", sub:"Panel · 8:30 h", listo:false},
-  {grupo:"Promos por panel", archivo:"video/promo-justicia.mp4", poster:"video/promo-justicia.jpg", titulo:"Justicia fiscal y mecanismos alternativos", sub:"Panel · 9:30 h", listo:false},
-  {grupo:"Promos por panel", archivo:"video/promo-aduanera.mp4", poster:"video/promo-aduanera.jpg", titulo:"Reforma Ley Aduanera: subvaluación", sub:"Panel · 10:15 h", listo:false},
-  {grupo:"Promos por panel", archivo:"video/promo-defensa.mp4", poster:"video/promo-defensa.jpg", titulo:"Estrategias de defensa", sub:"Panel · 10:45 h", listo:false},
-  {grupo:"Promos por panel", archivo:"video/promo-contexto.mp4", poster:"video/promo-contexto.jpg", titulo:"Contexto económico de la reforma", sub:"Conferencia · 8:15 h", listo:false}
+  {grupo:"Promo del foro", archivo:"video/promo-general.mp4", poster:"video/promo-general.jpg", titulo:"Foro Fiscal IMEF 2026", sub:"Video promocional · 1:30", listo:true},
+  /* Promos por panel */
+  {grupo:"Promos por panel", archivo:"video/promo-contexto.mp4", poster:"video/promo-contexto.jpg", titulo:"Contexto económico de la reforma", sub:"Conferencia · 8:15 h", listo:true},
+  {grupo:"Promos por panel", archivo:"video/promo-isr.mp4", poster:"video/promo-isr.jpg", titulo:"Ley del Impuesto sobre la Renta", sub:"Panel · 8:30 h", listo:true},
+  {grupo:"Promos por panel", archivo:"video/promo-justicia.mp4", poster:"video/promo-justicia.jpg", titulo:"Justicia fiscal y mecanismos alternativos", sub:"Panel · 9:30 h", listo:true},
+  {grupo:"Promos por panel", archivo:"video/promo-aduanera.mp4", poster:"video/promo-aduanera.jpg", titulo:"Reforma Ley Aduanera: subvaluación", sub:"Panel · 10:15 h", listo:true},
+  {grupo:"Promos por panel", archivo:"video/promo-defensa.mp4", poster:"video/promo-defensa.jpg", titulo:"Estrategias de defensa", sub:"Panel · 10:45 h", listo:true},
+  {grupo:"Semblanzas", persona:"concepcion", archivo:"video/sem-concepcion.mp4", poster:"video/sem-concepcion.jpg", titulo:"María Concepción del Alto Hernández", sub:"Inauguración · 8:00 h", listo:true},
+  {grupo:"Semblanzas", persona:"mancilla", archivo:"video/sem-mancilla.mp4", poster:"video/sem-mancilla.jpg", titulo:"Héctor Javier Mancilla López", sub:"Inauguración · 8:00 h", listo:true},
+  {grupo:"Semblanzas", persona:"leon", archivo:"video/sem-leon.mp4", poster:"video/sem-leon.jpg", titulo:"Felipe León Gámez", sub:"Modera el primer bloque", listo:true},
+  {grupo:"Semblanzas", persona:"barrera", archivo:"video/sem-barrera.mp4", poster:"video/sem-barrera.jpg", titulo:"Alejandro Barrera Fernández", sub:"Panel ISR · 8:30 h", listo:true},
+  {grupo:"Semblanzas", persona:"torres", archivo:"video/sem-torres.mp4", poster:"video/sem-torres.jpg", titulo:"Luisa Fernanda Torres Hernández", sub:"Panel ISR · 8:30 h", listo:true},
+  {grupo:"Semblanzas", persona:"hernandez", archivo:"video/sem-hernandez.mp4", poster:"video/sem-hernandez.jpg", titulo:"Marcelo Hernández", sub:"Panel ISR · 8:30 h", listo:true},
+  {grupo:"Semblanzas", persona:"rosas", archivo:"video/sem-rosas.mp4", poster:"video/sem-rosas.jpg", titulo:"Mag. María Alejandra Rosas Ramírez", sub:"Panel Justicia fiscal · 9:30 h", listo:true},
+  {grupo:"Semblanzas", persona:"garcia", archivo:"video/sem-garcia.mp4", poster:"video/sem-garcia.jpg", titulo:"Dra. Sara Carolina García Osuna", sub:"Panel Justicia fiscal · 9:30 h", listo:true},
+  {grupo:"Semblanzas", persona:"tuiran", archivo:"video/sem-tuiran.mp4", poster:"video/sem-tuiran.jpg", titulo:"José Miguel Tuirán Salas", sub:"Paneles Justicia fiscal y Estrategias de defensa", listo:true},
+  {grupo:"Semblanzas", persona:"garza", archivo:"video/sem-garza.mp4", poster:"video/sem-garza.jpg", titulo:"David Garza Rodríguez", sub:"Modera el segundo bloque", listo:true},
+  {grupo:"Semblanzas", persona:"barajas", archivo:"video/sem-barajas.mp4", poster:"video/sem-barajas.jpg", titulo:"Sergio Barajas Pérez", sub:"Panel Ley Aduanera · 10:15 h", listo:true},
+  {grupo:"Semblanzas", persona:"martinez", archivo:"video/sem-martinez.mp4", poster:"video/sem-martinez.jpg", titulo:"Luis F. Martínez", sub:"Panel Ley Aduanera · 10:15 h", listo:true},
+  {grupo:"Semblanzas", persona:"zenteno", archivo:"video/sem-zenteno.mp4", poster:"video/sem-zenteno.jpg", titulo:"Gil Alonso Zenteno García", sub:"Panel Estrategias de defensa · 10:45 h", listo:true},
+  {grupo:"Semblanzas", persona:"delatorre", archivo:"video/sem-delatorre.mp4", poster:"video/sem-delatorre.jpg", titulo:"Ramón de la Torre Medina", sub:"Panel Estrategias de defensa · 10:45 h", listo:true},
+  {grupo:"Semblanzas", persona:"reyna", archivo:"video/sem-reyna.mp4", poster:"video/sem-reyna.jpg", titulo:"Fernando Javier Reyna Salas", sub:"Despedida · 11:15 h", listo:true},
 ];
 
 /* Fechas del evento (hora de Monterrey, UTC-6) */
