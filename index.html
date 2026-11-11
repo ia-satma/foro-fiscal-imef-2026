@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Foro Fiscal IMEF 2026 · Reformas Fiscales 2027</title>
+<meta name="description" content="Foro Fiscal IMEF · Reformas Fiscales 2027. El impacto de la política recaudatoria en las empresas. Martes 17 de noviembre de 2026, 8:00 h, Club Industrial, San Pedro Garza García. Vale 3 puntos DPC.">
+<meta property="og:title" content="Foro Fiscal IMEF · Reformas Fiscales 2027">
+<meta property="og:description" content="La meta de recaudación y cómo piensa cobrarla Hacienda. 17 de noviembre de 2026 · Club Industrial, San Pedro.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap">
+<style>
+:root{--rojo:#ff2b2b;--rojoc:#ff5a5a;--azul:#1f4fa8;--noche:#0b1230;--lav:#c9cfee;--gris:#f3f3f3;--negro:#000;
+ --panel:rgba(11,18,48,.72);--linea:rgba(201,207,238,.16);--tenue:#aab2dc;--suave:#dfe3f7;--ease:cubic-bezier(.2,.7,.2,1);color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--negro);color:#fff;font-family:Lexend,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+h1,h2,h3{margin:0;line-height:1.08;text-wrap:balance}
+.rojo{color:var(--rojoc)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:.74rem;font-weight:700;letter-spacing:.3em;text-transform:uppercase;color:var(--rojo)}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--rojo)}
+:focus-visible{outline:2px solid var(--rojoc);outline-offset:3px;border-radius:6px}
+::selection{background:var(--rojo);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:999px;padding:14px 26px;font-weight:600;text-decoration:none;border:2px solid rgba(255,255,255,.75);background:transparent;cursor:pointer;transition:transform .2s var(--ease),background .2s}
+.btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.06)}
+.btn.prim{background:var(--rojo);border-color:var(--rojo)}
+.btn.prim:hover{background:#ff4646}
+.btn.sm{padding:9px 18px;font-size:.9rem}
+.btn svg{width:18px;height:18px}
+/* nav */
+.nav{position:fixed;left:0;right:0;top:0;z-index:50;padding:14px 0;transition:background .3s,padding .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.solida{background:rgba(0,0,0,.86);backdrop-filter:blur(10px);padding:8px 0;border-color:var(--linea)}
+.nav .wrap{display:flex;align-items:center;gap:22px}
+.nav .imef{height:46px;width:auto}
+.nav .tit{height:20px;width:auto}
+.nav nav{margin-left:auto;display:flex;gap:22px;font-size:.9rem}
+.nav nav a{text-decoration:none;color:var(--suave)}
+.nav nav a:hover{color:#fff}
+@media (max-width:900px){.nav nav{display:none}.nav .btn{margin-left:auto}.nav .tit{display:none}}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
+.hero .bg{position:absolute;inset:-4%;background:#000 url(img/fondo.jpg) no-repeat;background-size:cover;background-position:center 30%;animation:resp 26s ease-in-out infinite}
+@keyframes resp{0%,100%{transform:scale(1)}50%{transform:scale(1.05) translateX(-14px)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.55) 55%,rgba(0,0,0,.2)),linear-gradient(0deg,#000,transparent 30%)}
+.hero .wrap{position:relative;z-index:2;width:100%}
+.hero .dpc{display:inline-flex;align-items:center;gap:8px;border:2px solid #fff;border-radius:999px;padding:6px 16px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.hero .dpc b{color:var(--rojo)}
+.hero h1{font-size:clamp(3rem,9vw,7.2rem);font-weight:300;letter-spacing:.02em;margin-top:22px}
+.hero h1 b{font-weight:800}
+.hero .tema{font-size:clamp(1.7rem,4.2vw,3.2rem);font-weight:700;margin-top:6px;display:inline-block;padding-bottom:10px;border-bottom:5px solid var(--rojo)}
+.hero .bajada{font-size:clamp(1.05rem,2vw,1.4rem);font-weight:300;margin-top:20px;color:var(--suave)}
+.hero .frase{font-size:clamp(1.05rem,2vw,1.4rem);font-weight:700;color:var(--rojoc);margin-top:6px}
+.hero .cuando{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .cuando span{border:1px solid var(--linea);background:rgba(11,18,48,.6);border-radius:999px;padding:8px 18px;font-size:.95rem}
+.hero .cuando span:first-child{background:var(--rojo);border-color:var(--rojo);font-weight:700}
+.ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+/* cuenta */
+.cuenta{background:linear-gradient(180deg,#000,var(--noche));padding:80px 0;text-align:center;border-top:1px solid var(--linea)}
+.cuenta h2{font-size:clamp(1.8rem,4vw,2.8rem);margin-top:14px}
+.reloj{display:flex;justify-content:center;align-items:flex-start;gap:clamp(8px,2vw,22px);margin-top:34px}
+.reloj .u{min-width:clamp(70px,16vw,150px)}
+.reloj .n{display:block;font-size:clamp(3rem,10vw,6.5rem);font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.reloj .l{display:block;margin-top:8px;font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--tenue)}
+.reloj .sep{font-size:clamp(2.6rem,8vw,5.5rem);font-weight:800;line-height:1;color:var(--rojo)}
+.cuenta .nota{color:var(--tenue);margin-top:22px}
+.cuenta .ctas{justify-content:center}
+/* bloques */
+.bloque{padding-top:96px;padding-bottom:96px}
+.cab{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:end;margin-bottom:46px}
+.cab h2{font-size:clamp(2rem,4.4vw,3.2rem);margin-top:14px}
+.cab p{color:var(--suave);font-weight:300;font-size:1.08rem;margin:0}
+@media (max-width:860px){.cab{grid-template-columns:1fr;gap:16px}}
+.datos{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:28px}
+.dato{background:var(--panel);border:1px solid var(--linea);border-radius:20px;padding:24px}
+.dato b{display:block;font-size:clamp(1.6rem,3vw,2.3rem);font-weight:800;line-height:1.1}
+.dato span{display:block;color:var(--suave);font-weight:300;font-size:.92rem;margin-top:8px}
+.ejes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.eje{position:relative;background:var(--panel);border:1px solid var(--linea);border-radius:22px;padding:30px 30px 28px 34px;overflow:hidden}
+.eje::before{content:"";position:absolute;left:0;top:26px;bottom:26px;width:5px;border-radius:3px;background:var(--rojo)}
+.eje .num{font-size:.8rem;font-weight:700;letter-spacing:.24em;color:var(--rojo)}
+.eje h3{font-size:1.45rem;margin-top:8px}
+.eje .q{color:var(--rojoc);font-weight:600;margin-top:6px}
+.eje p{color:var(--suave);font-weight:300;margin:10px 0 0}
+.fuentes{color:var(--tenue);font-size:.8rem;margin-top:22px;font-weight:300}
+@media (max-width:860px){.datos{grid-template-columns:repeat(2,1fr)}.ejes{grid-template-columns:1fr}}
+/* programa */
+.blq{margin-top:28px}
+.bh{display:flex;flex-wrap:wrap;align-items:center;gap:14px 24px;padding-bottom:12px;border-bottom:1px solid var(--linea)}
+.bn{font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--lav);font-size:.85rem}
+.mod{color:var(--suave);font-weight:300}
+.lnk{background:none;border:0;padding:0;font-weight:600;color:#fff;text-decoration:underline;text-decoration-color:var(--rojo);text-underline-offset:4px;cursor:pointer}
+.agenda{list-style:none;margin:0;padding:0}
+.it{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--linea);position:relative}
+.it .hr b{display:block;font-size:2.2rem;font-weight:800;line-height:1}
+.it .hr span{color:var(--tenue);font-size:.88rem}
+.it .ty{font-size:.74rem;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--rojo)}
+.it h3{font-size:1.5rem;margin-top:4px}
+.it .qq{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.ch{display:inline-flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--linea);border-radius:999px;padding:5px 16px 5px 5px;cursor:pointer;font-size:.92rem;transition:border-color .2s}
+.ch:hover{border-color:var(--rojo)}
+.pend{color:var(--tenue);font-weight:300}
+.it.rec{padding:16px 0;opacity:.85}
+.it.rec .hr b{font-size:1.5rem}
+.it.rec .ty{color:var(--lav)}
+.vivo{display:none;margin-left:12px;background:var(--rojo);color:#fff;border-radius:999px;padding:2px 10px;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;vertical-align:2px}
+.it.ahora .vivo{display:inline-block;animation:lat 1.6s ease-in-out infinite}
+.it.ahora{background:linear-gradient(90deg,rgba(255,43,43,.1),transparent 60%)}
+@keyframes lat{50%{opacity:.45}}
+@media (max-width:640px){.it{grid-template-columns:1fr;gap:8px}.it .hr b{font-size:1.7rem;display:inline}.it .hr span{margin-left:8px}}
+/* ponentes */
+.ft{width:120px;height:120px;border-radius:50%;object-fit:cover;object-position:center 20%;border:4px solid var(--azul);box-shadow:0 0 0 6px rgba(201,207,238,.08)}
+.ft.ini{display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,var(--azul),var(--noche));color:var(--lav);font-weight:700;font-size:2.4rem}
+.ft.mini{width:38px;height:38px;border-width:2px;box-shadow:none;font-size:.85rem}
+.grupo{margin-top:40px}
+.grupo h3{font-size:1.15rem;display:flex;align-items:center;gap:16px}
+.grupo h3::after{content:"";flex:1;height:1px;background:var(--linea)}
+.grupo h3 small{white-space:nowrap;font-size:.74rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--rojo)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px;margin-top:18px}
+.pc{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;background:var(--panel);border:1px solid var(--linea);border-radius:22px;padding:26px 18px 20px;cursor:pointer;transition:transform .25s var(--ease),border-color .25s}
+.pc:hover{transform:translateY(-4px);border-color:rgba(255,43,43,.6)}
+.pc .ft{margin-bottom:8px}
+.pn{font-weight:700;font-size:1.06rem;line-height:1.25}
+.pr{color:var(--suave);font-weight:300;font-size:.88rem;line-height:1.35}
+.tg{margin-top:4px;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--rojo)}
+.mas{margin-top:auto;padding-top:10px;font-size:.82rem;color:var(--lav);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:640px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}.pc{padding:20px 10px 16px}.pc .ft{width:88px;height:88px;font-size:1.8rem}.pn{font-size:.95rem}.pr{font-size:.8rem}}
+dialog{max-width:720px;width:calc(100% - 32px);background:#060a1c;color:#fff;border:1px solid var(--linea);border-radius:26px;padding:0}
+dialog::backdrop{background:rgba(0,0,0,.72);backdrop-filter:blur(4px)}
+.dl{display:grid;grid-template-columns:auto 1fr;gap:26px;padding:34px}
+.dl .ft{width:150px;height:150px}
+.dl .r{font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rojo)}
+.dl h3{font-size:1.7rem;margin-top:6px}
+.dl .c{color:var(--lav);margin-top:6px}
+.dl p{color:var(--suave);font-weight:300;margin:16px 0 0}
+.x{position:absolute;right:16px;top:14px;background:rgba(255,255,255,.08);border:0;border-radius:50%;width:40px;height:40px;font-size:1.4rem;cursor:pointer}
+@media (max-width:620px){.dl{grid-template-columns:1fr;padding:28px 22px}.dl .ft{width:110px;height:110px}}
+/* sede y costos */
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media (max-width:860px){.dos{grid-template-columns:1fr}}
+.caja{background:var(--panel);border:1px solid var(--linea);border-radius:24px;padding:32px}
+.caja h3{font-size:1.6rem}
+.caja .s{color:var(--suave);font-weight:300;margin-top:6px}
+.mapa{border-radius:24px;overflow:hidden;border:1px solid var(--linea);min-height:320px;background:#0b1230}
+.mapa iframe{width:100%;height:100%;min-height:320px;border:0;filter:grayscale(.3) invert(.92) hue-rotate(180deg)}
+.precio{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid var(--linea)}
+.precio:last-of-type{border:0}
+.precio span{font-weight:300;color:var(--suave)}
+.precio b{font-size:2rem;font-weight:800}
+.cuadro{display:flex;gap:22px;align-items:center;margin-top:8px}
+.cuadro img{width:130px;border-radius:14px;background:#fff;padding:8px}
+/* final y pie */
+.final{position:relative;padding:110px 0;text-align:center;overflow:hidden;border-top:1px solid var(--linea)}
+.final .bg{position:absolute;inset:0;background:url(img/fondo.jpg) center 30%/cover;opacity:.55}
+.final .wrap{position:relative}
+.final h2{font-size:clamp(2rem,5vw,3.6rem)}
+.final p{color:var(--suave);font-weight:300;font-size:1.1rem;margin:16px auto 0;max-width:640px}
+.final .ctas{justify-content:center}
+.presenta{background:var(--gris);color:var(--azul);padding:34px 0}
+.presenta .wrap{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+.presenta span{font-weight:300;font-size:1.1rem}
+.presenta img{height:56px;width:auto}
+footer{padding:34px 0 46px;color:var(--tenue);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between;align-items:center}
+footer img{height:54px;width:auto}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.on{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero .bg{animation:none}}
+</style>
+</head>
+<body>
+<div class="nav" id="nav"><div class="wrap">
+  <img class="imef" src="img/imef.png" alt="IMEF Grupo Monterrey">
+  <img class="tit" src="img/titulo.png" alt="Foro Fiscal IMEF">
+  <nav aria-label="Secciones"><a href="#foro">El foro</a><a href="#programa">Programa</a><a href="#ponentes">Ponentes</a><a href="#sede">Sede</a><a href="#costos">Costos</a></nav>
+  <a class="btn prim sm reg" href="mailto:eventos@imefmty.com?subject=Registro%20Foro%20Fiscal%20IMEF%202026" target="_blank" rel="noopener">Registrarme</a>
+</div></div>
+
+<header class="hero">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="dpc"><b>3</b> puntos DPC</span>
+    <h1>Foro Fiscal <b>IMEF</b></h1>
+    <div class="tema">Reformas Fiscales 2027</div>
+    <p class="bajada">El impacto de la política recaudatoria en las empresas</p>
+    <p class="frase">La meta de recaudación y cómo piensa cobrarla Hacienda.</p>
+    <div class="cuando"><span>Martes 17 de noviembre de 2026</span><span>8:00 a 11:00 h</span><span>Club Industrial · Salón Panorámico · San Pedro</span></div>
+    <div class="ctas"><a class="btn prim reg" href="mailto:eventos@imefmty.com?subject=Registro%20Foro%20Fiscal%20IMEF%202026" target="_blank" rel="noopener">Registrarme al foro</a><a class="btn" href="#programa">Ver programa</a></div>
+  </div>
+</header>
+
+<section class="cuenta" aria-labelledby="t-cuenta">
+  <div class="wrap">
+    <div class="eyebrow" id="cap">Cuenta regresiva</div>
+    <h2 id="t-cuenta">Nos vemos el <span class="rojo">17 de noviembre</span></h2>
+    <div class="reloj" role="timer" aria-label="Tiempo para el inicio del foro">
+      <div class="u"><span class="n" id="d">--</span><span class="l">Días</span></div><span class="sep">:</span>
+      <div class="u"><span class="n" id="h">--</span><span class="l">Horas</span></div><span class="sep">:</span>
+      <div class="u"><span class="n" id="m">--</span><span class="l">Min</span></div><span class="sep">:</span>
+      <div class="u"><span class="n" id="s">--</span><span class="l">Seg</span></div>
+    </div>
+    <p class="nota" id="nota">Martes 17 de noviembre, 8:00 h, hora de Monterrey.</p>
+    <div class="ctas"><a class="btn" id="gcal" href="https://calendar.google.com" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agregar a mi calendario</a></div>
+  </div>
+</section>
+
+<section class="bloque wrap" id="foro" aria-labelledby="t-foro">
+  <div class="cab rv">
+    <div><div class="eyebrow">El foro</div><h2 id="t-foro">La meta de recaudación y <span class="rojo">cómo piensa cobrarla</span> Hacienda</h2></div>
+    <p>IMEF Grupo Monterrey reúne a la magistratura del TFJA, a Prodecon y a los especialistas de Basham para explicar qué cambia con el paquete fiscal 2027 y cómo deben prepararse las empresas.</p>
+  </div>
+  <div class="datos">
+    <div class="dato rv"><b>$6.26 bdp</b><span>Ingresos por impuestos que estima la Ley de Ingresos 2027</span></div>
+    <div class="dato rv"><b>$3.29 bdp</b><span>Esperados del ISR, el impuesto que más aporta</span></div>
+    <div class="dato rv"><b>$3.30 bdp</b><span>Cartera de adeudos fiscales del SAT a septiembre de 2026</span></div>
+    <div class="dato rv"><b>3 puntos</b><span>DPC por asistir al foro</span></div>
+  </div>
+  <div class="ejes">
+    <div class="eje rv"><div class="num">01 · 8:30 h</div><h3>Ley del Impuesto sobre la Renta</h3><div class="q">Menos deducciones, más control.</div><p>Límite a deducciones para empresas con ingresos de más de 50 millones, pérdidas fiscales al 50% de la utilidad y menos intereses deducibles.</p></div>
+    <div class="eje rv"><div class="num">02 · 9:30 h</div><h3>Justicia fiscal y mecanismos alternativos</h3><div class="q">Antes del litigio, hay caminos.</div><p>Acuerdos conclusivos, quejas ante Prodecon y juicio ante el TFJA, con la autoridad jurisdiccional, la defensoría del contribuyente y la práctica privada en la misma mesa.</p></div>
+    <div class="eje rv"><div class="num">03 · 10:15 h</div><h3>Reforma Ley Aduanera: subvaluación</h3><div class="q">El valor declarado, bajo la lupa.</div><p>Desde el 1 de enero de 2027 desaparece el umbral del 50% para el embargo precautorio por subvaluación. Qué deben revisar importadores y agentes aduanales.</p></div>
+    <div class="eje rv"><div class="num">04 · 10:45 h</div><h3>Estrategias de defensa</h3><div class="q">Si llega la auditoría, ¿estás listo?</div><p>El SAT va por más. Estrategias para responder a revisiones, defender a la empresa y elegir el medio de defensa correcto.</p></div>
+  </div>
+  <p class="fuentes">Fuentes: Ley de Ingresos de la Federación 2027 (Cámara de Diputados); reforma a la LISR 2027; Ley Aduanera, DOF 23 de octubre de 2026; SAT, informe de cartera de créditos fiscales a septiembre de 2026.</p>
+</section>
+
+<section class="bloque wrap" id="programa" aria-labelledby="t-prog" style="padding-top:0">
+  <div class="cab rv">
+    <div><div class="eyebrow">Programa</div><h2 id="t-prog">Una mañana, <span class="rojo">tres bloques</span></h2></div>
+    <p>De la reforma al ISR a la defensa ante el SAT, con los especialistas que la viven todos los días. Toca un nombre para leer su semblanza.</p>
+  </div>
+  <div class="blq rv"><div class="bh"><span class="bn">Primer bloque</span><span class="mod">Modera <button type="button" class="lnk" data-p="leon">Felipe León Gámez</button></span></div><ol class="agenda"><li class="it" data-ini="8:00" data-fin="8:15"><div class="hr"><b>8:00</b><span>a 8:15 h</span></div><div class="tx"><span class="ty">Inauguración</span><span class="vivo">En vivo</span><h3>Inauguración y bienvenida</h3><div class="qq"><button class="ch" type="button" data-p="concepcion"><img class="ft mini" src="img/p/imef-concepcion.jpg" alt="" ><span>María Concepción del Alto Hernández</span></button><button class="ch" type="button" data-p="mancilla"><img class="ft mini" src="img/p/imef-mancilla.jpg" alt="" ><span>Héctor Javier Mancilla López</span></button></div></div></li><li class="it" data-ini="8:15" data-fin="8:30"><div class="hr"><b>8:15</b><span>a 8:30 h</span></div><div class="tx"><span class="ty">Conferencia</span><span class="vivo">En vivo</span><h3>Contexto económico de la reforma</h3><div class="qq"><span class="pend">Economista socio del IMEF (por confirmar)</span></div></div></li><li class="it" data-ini="8:30" data-fin="9:15"><div class="hr"><b>8:30</b><span>a 9:15 h</span></div><div class="tx"><span class="ty">Panel</span><span class="vivo">En vivo</span><h3>Ley del Impuesto sobre la Renta</h3><div class="qq"><button class="ch" type="button" data-p="barrera"><img class="ft mini" src="img/p/barrera-fernandez-alejandro.jpg" alt="" ><span>Alejandro Barrera Fernández</span></button><button class="ch" type="button" data-p="torres"><img class="ft mini" src="img/p/luisa-torres.jpg" alt="" ><span>Luisa Fernanda Torres Hernández</span></button><button class="ch" type="button" data-p="hernandez"><img class="ft mini" src="img/p/hernandez-marcelo.jpg" alt="" ><span>Marcelo Hernández</span></button></div></div></li><li class="it rec" data-ini="9:15" data-fin="9:30"><div class="hr"><b>9:15</b><span>a 9:30 h</span></div><div class="tx"><span class="ty">Receso</span><span class="vivo">En vivo</span></div></li></ol></div><div class="blq rv"><div class="bh"><span class="bn">Segundo bloque</span><span class="mod">Modera <button type="button" class="lnk" data-p="garza">David Garza Rodríguez</button></span></div><ol class="agenda"><li class="it" data-ini="9:30" data-fin="10:15"><div class="hr"><b>9:30</b><span>a 10:15 h</span></div><div class="tx"><span class="ty">Panel</span><span class="vivo">En vivo</span><h3>Justicia fiscal y mecanismos alternativos</h3><div class="qq"><button class="ch" type="button" data-p="rosas"><img class="ft mini" src="img/p/rosas-ramirez-alejandra.jpg" alt="" ><span>Mag. María Alejandra Rosas Ramírez</span></button><button class="ch" type="button" data-p="garcia"><img class="ft mini" src="img/p/garcia-osuna-sara.jpg" alt="" ><span>Dra. Sara Carolina García Osuna</span></button><button class="ch" type="button" data-p="tuiran"><img class="ft mini" src="img/p/jose-miguel-tuiran-salas.jpg" alt="" ><span>José Miguel Tuirán Salas</span></button></div></div></li><li class="it" data-ini="10:15" data-fin="10:45"><div class="hr"><b>10:15</b><span>a 10:45 h</span></div><div class="tx"><span class="ty">Panel</span><span class="vivo">En vivo</span><h3>Reforma Ley Aduanera: subvaluación</h3><div class="qq"><button class="ch" type="button" data-p="barajas"><img class="ft mini" src="img/p/barajas-perez-sergio.jpg" alt="" ><span>Sergio Barajas Pérez</span></button><button class="ch" type="button" data-p="martinez"><img class="ft mini" src="img/p/martinez-luis.jpg" alt="" ><span>Luis F. Martínez</span></button></div></div></li></ol></div><div class="blq rv"><div class="bh"><span class="bn">Tercer bloque</span></div><ol class="agenda"><li class="it" data-ini="10:45" data-fin="11:15"><div class="hr"><b>10:45</b><span>a 11:15 h</span></div><div class="tx"><span class="ty">Panel</span><span class="vivo">En vivo</span><h3>Estrategias de defensa</h3><div class="qq"><button class="ch" type="button" data-p="zenteno"><img class="ft mini" src="img/p/zenteno-garcia-gil-alonso.jpg" alt="" ><span>Gil Alonso Zenteno García</span></button><button class="ch" type="button" data-p="delatorre"><img class="ft mini" src="img/p/ramon-de-la-torre-m.jpg" alt="" ><span>Ramón de la Torre Medina</span></button><button class="ch" type="button" data-p="tuiran"><img class="ft mini" src="img/p/jose-miguel-tuiran-salas.jpg" alt="" ><span>José Miguel Tuirán Salas</span></button></div></div></li><li class="it" data-ini="11:15" data-fin="11:30"><div class="hr"><b>11:15</b><span></span></div><div class="tx"><span class="ty">Cierre</span><span class="vivo">En vivo</span><h3>Despedida</h3><div class="qq"><button class="ch" type="button" data-p="reyna"><img class="ft mini" src="img/p/imef-reyna.jpg" alt="" ><span>Fernando Javier Reyna Salas</span></button></div></div></li></ol></div>
+</section>
+
+<section class="bloque wrap" id="ponentes" aria-labelledby="t-pon" style="padding-top:0">
+  <div class="cab rv">
+    <div><div class="eyebrow">Ponentes</div><h2 id="t-pon">Quién <span class="rojo">te lo explica</span></h2></div>
+    <p>Basham, Ringe y Correa, el Tribunal Federal de Justicia Administrativa y la Procuraduría de la Defensa del Contribuyente.</p>
+  </div>
+  <div class="grupo"><h3><small>8:30 h</small>Ley del Impuesto sobre la Renta</h3><div class="grid"><button class="pc rv" type="button" data-p="barrera"><img class="ft " src="img/p/barrera-fernandez-alejandro.jpg" alt="" ><span class="pn">Alejandro Barrera Fernández</span><span class="pr">Socio · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="torres"><img class="ft " src="img/p/luisa-torres.jpg" alt="" ><span class="pn">Luisa Fernanda Torres Hernández</span><span class="pr">Asociada · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="hernandez"><img class="ft " src="img/p/hernandez-marcelo.jpg" alt="" ><span class="pn">Marcelo Hernández</span><span class="pr">Asociado · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button></div></div><div class="grupo"><h3><small>9:30 h</small>Justicia fiscal y mecanismos alternativos</h3><div class="grid"><button class="pc rv" type="button" data-p="rosas"><img class="ft " src="img/p/rosas-ramirez-alejandra.jpg" alt="" ><span class="pn">Mag. María Alejandra Rosas Ramírez</span><span class="pr">Magistrada, Segunda Sala Regional del Noreste · TFJA</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="garcia"><img class="ft " src="img/p/garcia-osuna-sara.jpg" alt="" ><span class="pn">Dra. Sara Carolina García Osuna</span><span class="pr">Delegada en Nuevo León · Prodecon</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="tuiran"><img class="ft " src="img/p/jose-miguel-tuiran-salas.jpg" alt="" ><span class="pn">José Miguel Tuirán Salas</span><span class="pr">Consejero · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button></div></div><div class="grupo"><h3><small>10:15 h</small>Reforma Ley Aduanera: subvaluación</h3><div class="grid"><button class="pc rv" type="button" data-p="barajas"><img class="ft " src="img/p/barajas-perez-sergio.jpg" alt="" ><span class="pn">Sergio Barajas Pérez</span><span class="pr">Socio · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="martinez"><img class="ft " src="img/p/martinez-luis.jpg" alt="" ><span class="pn">Luis F. Martínez</span><span class="pr">Especialista en Comercio Exterior</span><span class="mas">Ver semblanza</span></button></div></div><div class="grupo"><h3><small>10:45 h</small>Estrategias de defensa</h3><div class="grid"><button class="pc rv" type="button" data-p="zenteno"><img class="ft " src="img/p/zenteno-garcia-gil-alonso.jpg" alt="" ><span class="pn">Gil Alonso Zenteno García</span><span class="pr">Socio · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="delatorre"><img class="ft " src="img/p/ramon-de-la-torre-m.jpg" alt="" ><span class="pn">Ramón de la Torre Medina</span><span class="pr">Socio · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="tuiran"><img class="ft " src="img/p/jose-miguel-tuiran-salas.jpg" alt="" ><span class="pn">José Miguel Tuirán Salas</span><span class="pr">Consejero · Basham, Ringe y Correa</span><span class="mas">Ver semblanza</span></button></div></div>
+  <div class="grupo"><h3><small>IMEF</small>Anfitriones y moderadores</h3><div class="grid"><button class="pc rv" type="button" data-p="concepcion"><img class="ft " src="img/p/imef-concepcion.jpg" alt="" ><span class="pn">María Concepción del Alto Hernández</span><span class="pr">Presidenta · IMEF Grupo Monterrey</span><span class="tg">Inauguración · 8:00 h</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="mancilla"><img class="ft " src="img/p/imef-mancilla.jpg" alt="" ><span class="pn">Héctor Javier Mancilla López</span><span class="pr">Socio de consultoría fiscal · Crowe México</span><span class="tg">Inauguración · 8:00 h</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="leon"><img class="ft " src="img/p/imef-leon.jpg" alt="" ><span class="pn">Felipe León Gámez</span><span class="pr">Socio retirado de Impuestos y Servicios Legales, Deloitte · Consultor independiente</span><span class="tg">Modera el primer bloque</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="garza"><img class="ft " src="img/p/imef-garza.jpg" alt="" ><span class="pn">David Garza Rodríguez</span><span class="pr">Gerente Fiscal y de Comercio Exterior · Grupo Cuprum</span><span class="tg">Modera el segundo bloque</span><span class="mas">Ver semblanza</span></button><button class="pc rv" type="button" data-p="reyna"><img class="ft " src="img/p/imef-reyna.jpg" alt="" ><span class="pn">Fernando Javier Reyna Salas</span><span class="pr">Socio de Impuestos y Servicios Legales · Deloitte</span><span class="tg">Despedida · 11:15 h</span><span class="mas">Ver semblanza</span></button></div></div>
+</section>
+
+<section class="bloque wrap" id="sede" aria-labelledby="t-sede" style="padding-top:0">
+  <div class="cab rv"><div><div class="eyebrow">Sede</div><h2 id="t-sede">Club Industrial, <span class="rojo">Salón Panorámico</span></h2></div><p>Av. Parteaguas 698, Los Arcángeles, 66266 San Pedro Garza García, N.L.</p></div>
+  <div class="dos">
+    <div class="caja rv"><h3>Club Industrial</h3><div class="s">Salón Panorámico</div><p class="s" style="margin-top:16px">Av. Parteaguas 698, Los Arcángeles, 66266 San Pedro Garza García, N.L.</p>
+      <div class="ctas"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Club%20Industrial%2C%20Av.%20Parteaguas%20698%2C%20San%20Pedro%20Garza%20Garc%C3%ADa%2C%20N.L." target="_blank" rel="noopener">Abrir en Google Maps</a></div></div>
+    <div class="mapa rv"><iframe title="Mapa del Club Industrial" loading="lazy" src="https://maps.google.com/maps?q=Club%20Industrial%2C%20Av.%20Parteaguas%20698%2C%20Los%20Arc%C3%A1ngeles%2C%20San%20Pedro%20Garza%20Garc%C3%ADa%2C%20N.L.&z=15&output=embed"></iframe></div>
+  </div>
+</section>
+
+<section class="bloque wrap" id="costos" aria-labelledby="t-costos" style="padding-top:0">
+  <div class="cab rv"><div><div class="eyebrow">Costos</div><h2 id="t-costos">Aparta <span class="rojo">tu lugar</span></h2></div><p>El foro vale 3 puntos DPC. Informes en eventos@imefmty.com.</p></div>
+  <div class="dos">
+    <div class="caja rv"><div class="precio"><span>Socios IMEF</span><b>$600</b></div><div class="precio"><span>Organizaciones aliadas y colaborador de socio</span><b>$1,000</b></div><div class="precio"><span>Público general</span><b>$1,200</b></div>
+      <div class="ctas"><a class="btn prim reg" href="mailto:eventos@imefmty.com?subject=Registro%20Foro%20Fiscal%20IMEF%202026" target="_blank" rel="noopener">Registrarme</a></div></div>
+    <div class="caja rv"><h3>¿Dudas?</h3><p class="s">Escríbenos a <b>eventos@imefmty.com</b> o mándanos un WhatsApp al 81 2399 7852.</p>
+      <div class="cuadro"><img src="img/qr-whatsapp.jpg" alt="Código QR de WhatsApp de IMEF Grupo Monterrey"><div><a class="btn" href="https://wa.me/528123997852" target="_blank" rel="noopener">Abrir WhatsApp</a></div></div></div>
+  </div>
+</section>
+
+<section class="final"><div class="bg" aria-hidden="true"></div><div class="wrap">
+  <h2>Reformas Fiscales <span class="rojo">2027</span></h2>
+  <p>Martes 17 de noviembre de 2026 · 8:00 h · Club Industrial, San Pedro Garza García.</p>
+  <div class="ctas"><a class="btn prim reg" href="mailto:eventos@imefmty.com?subject=Registro%20Foro%20Fiscal%20IMEF%202026" target="_blank" rel="noopener">Registrarme al foro</a></div>
+</div></section>
+
+<section class="presenta" aria-label="Evento presentado por Basham"><div class="wrap"><span>Evento presentado por</span><img src="img/basham.png" alt="Basham, Ringe y Correa"></div></section>
+<footer><div class="wrap"><img src="img/imef.png" alt="IMEF Grupo Monterrey"><span>Informes: <a href="mailto:eventos@imefmty.com">eventos@imefmty.com</a> · <a href="https://www.imefmty.com" target="_blank" rel="noopener">www.imefmty.com</a></span></div></footer>
+
+<dialog id="dlg" aria-labelledby="dlg-n"><button class="x" id="cerrar" type="button" aria-label="Cerrar">×</button>
+  <div class="dl"><div id="dlg-f"></div><div><div class="r" id="dlg-r"></div><h3 id="dlg-n"></h3><div class="c" id="dlg-c"></div><p id="dlg-b"></p></div></div>
+</dialog>
+
+<script>
+(function(){
+  /* Liga de registro: cámbiala aquí cuando esté lista */
+  var REGISTRO="mailto:eventos@imefmty.com?subject=Registro%20Foro%20Fiscal%20IMEF%202026";
+  [].forEach.call(document.querySelectorAll("a.reg"),function(a){a.href=REGISTRO});
+
+  var nav=document.getElementById("nav");
+  function navCheck(){nav.classList.toggle("solida",window.scrollY>40)}
+  navCheck();addEventListener("scroll",navCheck,{passive:true});
+
+  /* Contador (Monterrey: UTC-6) */
+  var INICIO=Date.parse("2026-11-17T08:00:00-06:00"),FIN=Date.parse("2026-11-17T11:30:00-06:00");
+  var el={};["d","h","m","s"].forEach(function(k){el[k]=document.getElementById(k)});
+  var cap=document.getElementById("cap"),nota=document.getElementById("nota");
+  var filas=[].slice.call(document.querySelectorAll(".agenda .it"));
+  function pad(n){return n<10?"0"+n:""+n}
+  function aMs(hm){if(hm.length<5)hm="0"+hm;return Date.parse("2026-11-17T"+hm+":00-06:00")}
+  function tic(){var ahora=Date.now(),t=Math.floor(Math.max(0,INICIO-ahora)/1000);
+    el.d.textContent=pad(Math.floor(t/86400));el.h.textContent=pad(Math.floor(t%86400/3600));el.m.textContent=pad(Math.floor(t%3600/60));el.s.textContent=pad(t%60);
+    if(ahora>=FIN){cap.textContent="Gracias por acompañarnos";nota.textContent="Nos vemos en el próximo Foro Fiscal IMEF."}
+    else if(ahora>=INICIO){cap.textContent="El foro está en vivo"}
+    filas.forEach(function(f){f.classList.toggle("ahora",ahora>=aMs(f.dataset.ini)&&ahora<aMs(f.dataset.fin))});}
+  tic();setInterval(tic,1000);
+  document.getElementById("gcal").href="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent("Foro Fiscal IMEF · Reformas Fiscales 2027")+
+    "&dates=20261117T140000Z/20261117T170000Z&details="+encodeURIComponent("IMEF Grupo Monterrey. Evento presentado por Basham. Informes: eventos@imefmty.com")+
+    "&location="+encodeURIComponent("Club Industrial, Salón Panorámico, Av. Parteaguas 698, San Pedro Garza García, N.L.");
+
+  /* Semblanzas */
+  var P={"barrera":{"r":"Panel · 8:30 h","n":"Alejandro Barrera Fernández","c":"Socio · Basham, Ringe y Correa","b":"Más de 28 años en materia fiscal. Trabajó en la Procuraduría Fiscal de la Federación, estudió la maestría en tributación internacional en NYU como becario Fulbright y desde hace 20 años imparte la cátedra de tratados de doble tributación en la Universidad Panamericana. Chambers, Legal 500 y Who’s Who Legal lo reconocen entre los mejores fiscalistas de México.","f":"barrera-fernandez-alejandro.jpg","i":"AB"},"torres":{"r":"Panel · 8:30 h","n":"Luisa Fernanda Torres Hernández","c":"Asociada · Basham, Ringe y Correa","b":"Abogada por la Universidad Panamericana con mención honorífica. Cinco años en consultoría fiscal y planeación patrimonial, en asuntos nacionales e internacionales. Coautora del libro PRACTICUM Controversia fiscal (Thomson Reuters).","f":"luisa-torres.jpg","i":"LT"},"hernandez":{"r":"Panel · 8:30 h","n":"Marcelo Hernández","c":"Asociado · Basham, Ringe y Correa","b":"Abogado de consultoría y medios de defensa en materia fiscal y administrativa en Basham, Ringe y Correa, donde se formó desde practicante en la oficina de Monterrey. Licenciado en Derecho por el Tecnológico de Monterrey, con un semestre en la Universidad CEU San Pablo (Madrid). Miembro de ANADE Nuevo León.","f":"hernandez-marcelo.jpg","i":"MH"},"rosas":{"r":"Panel · 9:30 h","n":"Mag. María Alejandra Rosas Ramírez","c":"Magistrada, Segunda Sala Regional del Noreste · TFJA","b":"Magistrada de la Segunda Sala Regional del Noreste del Tribunal Federal de Justicia Administrativa, con 31 años en el servicio público. Abogada por la Universidad de Guadalajara y especialista en Justicia Administrativa. Cursó el Programa de Formación Directiva de Magistradas y Magistrados del TFJA y ha participado en seminarios y foros fiscales de la Academia de Derecho Fiscal de Nuevo León y la Barra Mexicana.","f":"rosas-ramirez-alejandra.jpg","i":"AR"},"garcia":{"r":"Panel · 9:30 h","n":"Dra. Sara Carolina García Osuna","c":"Delegada en Nuevo León · Prodecon","b":"Delegada de la Procuraduría de la Defensa del Contribuyente (Prodecon) en Nuevo León. Doctora en Políticas de Bienestar Social. Desde la delegación impulsa la asesoría, las quejas, la representación legal y los acuerdos conclusivos para los contribuyentes del estado, y ha firmado convenios de colaboración con el Instituto de Contadores Públicos de Nuevo León y con CANACO Monterrey.","f":"garcia-osuna-sara.jpg","i":"SG"},"tuiran":{"r":"Paneles · 9:30 y 10:45 h","n":"José Miguel Tuirán Salas","c":"Consejero · Basham, Ringe y Correa","b":"Más de 14 años acompañando a empresas durante revisiones de autoridades fiscales federales y estatales, en litigio y en consultoría fiscal para sectores como consumo, manufactura, energía, infraestructura y servicios financieros. Licenciado y maestro en Derecho Fiscal por la UANL. Director Pro Bono de ANADE.","f":"jose-miguel-tuiran-salas.jpg","i":"JT"},"barajas":{"r":"Panel · 10:15 h","n":"Sergio Barajas Pérez","c":"Socio · Basham, Ringe y Correa","b":"Más de 24 años en asuntos aduaneros y de comercio exterior, con experiencia previa en el SAT. Presidente nacional del IMECE y director de la obra «Experto en Comercio Exterior y Aduanas». Chambers & Partners y Legal 500 lo reconocen entre los mejores abogados de comercio exterior.","f":"barajas-perez-sergio.jpg","i":"SB"},"martinez":{"r":"Panel · 10:15 h","n":"Luis F. Martínez","c":"Especialista en Comercio Exterior","b":"Más de 18 años de experiencia en comercio exterior y aduanas. Asesora a clientes públicos y privados en litigio y consultoría preventiva aduanera, regulaciones no arancelarias, programa IMMEX, inversión extranjera y tratados comerciales. Trabajó en Basham, Ringe y Correa y en Baker & McKenzie, y fue investigador en el National Law Center for Inter-American Free Trade (Tucson, Arizona) y en el Centro Jurídico para el Comercio Interamericano del Tec de Monterrey. Catedrático de posgrado y miembro de la Barra Mexicana de Abogados, el IMECE, la American Bar Association y la Barra de Abogados México-EE.UU.","f":"martinez-luis.jpg","i":"LM"},"zenteno":{"r":"Panel · 10:45 h","n":"Gil Alonso Zenteno García","c":"Socio · Basham, Ringe y Correa","b":"30 años como consultor y litigante fiscal. Expuso ante el pleno de la Suprema Corte los argumentos de inconstitucionalidad contra la Ley del IETU. Socio del IMEF, catedrático en La Salle y en el diplomado del ITAM, y reconocido por Chambers, Legal 500 y Who’s Who Legal.","f":"zenteno-garcia-gil-alonso.jpg","i":"GZ"},"delatorre":{"r":"Panel · 10:45 h","n":"Ramón de la Torre Medina","c":"Socio · Basham, Ringe y Correa","b":"Más de 17 años en derecho fiscal. Fue asesor fiscal del Subsecretario de Ingresos de la SHCP, estudió la maestría en tributación internacional en NYU como becario Fulbright y es secretario de la Comisión Fiscal de la Barra Mexicana de Abogados. Profesor del diplomado de controversia y litigio fiscal del ITAM.","f":"ramon-de-la-torre-m.jpg","i":"RT"},"concepcion":{"r":"Inauguración · 8:00 h","n":"María Concepción del Alto Hernández","c":"Presidenta · IMEF Grupo Monterrey","b":"Especialista en finanzas e inversiones con más de 25 años de experiencia en los ámbitos corporativo, académico y de gobierno corporativo. Contadora pública y doctora en Finanzas por la Universidad de Tulane, es consejera independiente de diversas empresas y organismos. Desde 2026 preside IMEF Grupo Monterrey; además preside el Premio de Equidad de Género del IMEF, es fundadora del Consejo de Mujeres Directivas y es profesora de la Maestría en Finanzas de EGADE Business School.","f":"imef-concepcion.jpg","i":"MA"},"mancilla":{"r":"Inauguración · 8:00 h","n":"Héctor Javier Mancilla López","c":"Socio de consultoría fiscal · Crowe México","b":"Más de 28 años en consultoría de impuestos corporativos en firmas como Ernst & Young, Deloitte, RSM y Crowe, donde es socio líder fiscal del sector financiero nacional. Especialista en reestructuración de grupos y estructuras fiscales nacionales, internacionales y patrimoniales. Presidió IMEF Grupo Monterrey en 2024 y 2025, fue presidente de su Comisión Fiscal y durante seis años Síndico del Contribuyente ante el SAT en Monterrey.","f":"imef-mancilla.jpg","i":"HM"},"leon":{"r":"Modera el primer bloque","n":"Felipe León Gámez","c":"Socio retirado de Impuestos y Servicios Legales, Deloitte · Consultor independiente","b":"Contador público certificado por la Escuela Bancaria y Comercial, con maestría en Consultoría en Estrategia de Negocios por la Universidad Panamericana. Más de 40 años en asesoría fiscal; socio de Deloitte desde 1993 y hoy socio retirado. Fue presidente de la Asociación Nacional de Especialistas Fiscales de Monterrey, es vocal del Consejo Directivo de IMEF Grupo Monterrey y autor de diversos libros y publicaciones especializadas.","f":"imef-leon.jpg","i":"FL"},"garza":{"r":"Modera el segundo bloque","n":"David Garza Rodríguez","c":"Gerente Fiscal y de Comercio Exterior · Grupo Cuprum","b":"Más de 25 años en impuestos y comercio exterior. Contador público certificado por la UANL con maestría en Impuestos. Ocupó posiciones directivas en OMA y Grupo Proeza, y desde 2010 lidera la política fiscal y aduanera de Grupo Cuprum, con foco en cumplimiento aduanero, reglas de origen del T-MEC y defensa ante medidas arancelarias. Ha sido consejero del Consejo Mexicano de Comercio Exterior del Noreste.","f":"imef-garza.jpg","i":"DG"},"reyna":{"r":"Despedida · 11:15 h","n":"Fernando Javier Reyna Salas","c":"Socio de Impuestos y Servicios Legales · Deloitte","b":"Contador público certificado con maestría en Consultoría Estratégica de Negocios y más de 25 años en firmas internacionales. Especialista fiscal en estructuras patrimoniales y corporativas, fusiones y adquisiciones. Es miembro del Consejo Directivo de IMEF Grupo Monterrey y ha impartido seminarios ejecutivos en materia fiscal para la región norte.","f":"imef-reyna.jpg","i":"FR"}};
+  var dlg=document.getElementById("dlg");
+  function abrir(k){var p=P[k];if(!p)return;
+    document.getElementById("dlg-r").textContent=p.r||"";document.getElementById("dlg-n").textContent=p.n;
+    document.getElementById("dlg-c").textContent=p.c;document.getElementById("dlg-b").textContent=p.b;
+    document.getElementById("dlg-f").innerHTML=p.f?'<img class="ft" src="img/p/'+p.f+'" alt="">':'<span class="ft ini">'+p.i+'</span>';
+    if(dlg.showModal)dlg.showModal();else dlg.setAttribute("open","");}
+  [].forEach.call(document.querySelectorAll("[data-p]"),function(b){b.addEventListener("click",function(){abrir(b.dataset.p)})});
+  document.getElementById("cerrar").addEventListener("click",function(){dlg.close()});
+  dlg.addEventListener("click",function(e){if(e.target===dlg)dlg.close()});
+
+  /* Aparición al hacer scroll */
+  var rv=[].slice.call(document.querySelectorAll(".rv"));
+  if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{rootMargin:"0px 0px -8% 0px"});rv.forEach(function(x){io.observe(x)})}
+  else rv.forEach(function(x){x.classList.add("on")});
+})();
+</script>
+</body>
+</html>
