@@ -197,7 +197,7 @@ svg.iso{width:100%;height:auto;max-height:min(330px,40svh);margin-top:4px}
 .iso .poste{fill:#1a2759}.iso .poste-l{fill:#121c45}
 .iso .rot{font:600 10px var(--sans);fill:var(--tenue);letter-spacing:.06em}
 .iso .rot.on{fill:#fff}
-.iso .esc{font:500 9px var(--sans);fill:rgba(201,207,238,.7)}
+.iso .esc{font:500 10px var(--sans);fill:rgba(201,207,238,.85)}
 .sel{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:4px 12px;padding-top:12px;border-top:1px solid var(--linea);min-height:48px}
 .sel .q{font-weight:600}
 .sel .q i{font-style:normal;color:var(--tenue);font-weight:400}
@@ -252,6 +252,11 @@ svg.iso{width:100%;height:auto;max-height:min(330px,40svh);margin-top:4px}
 .marco video,.marco img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .tapa{position:absolute;inset:0;display:grid;place-items:center;border:0;padding:0;cursor:pointer;color:#fff;background:linear-gradient(180deg,rgba(3,5,12,.05),rgba(3,5,12,.55));transition:opacity .45s}
 .tapa[hidden]{display:none}
+/* El póster del promo ya lleva la marca y la cifra: el botón va a la derecha, sobre la ilustración, y no tapa el texto */
+#promoTapa{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding-left:56%;background:radial-gradient(34% 56% at 78% 52%,rgba(3,5,12,.42),transparent 72%)}
+#promoTapa .rot{position:static;align-items:center;text-align:center;padding:0 12px}
+#promoTapa .rot b{display:none}
+#promoTapa .rot small{color:#fff;font-weight:500;text-shadow:0 1px 12px rgba(3,5,12,.9)}
 .tapa .play{position:relative;display:grid;place-items:center;width:clamp(78px,9vw,112px);height:clamp(78px,9vw,112px);border-radius:50%;background:var(--rojob);box-shadow:0 0 0 12px rgba(255,255,255,.08),0 24px 60px -16px rgba(225,29,29,.9);transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
 .tapa .play svg{width:34%;height:34%;margin-left:6%}
 .tapa:hover .play{transform:scale(1.07);box-shadow:0 0 0 18px rgba(255,255,255,.1),0 28px 70px -16px rgba(225,29,29,1)}
@@ -561,6 +566,8 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
   .ctas .btn{flex:1 1 100%;justify-content:space-between}
   .ctas .btn.solo{justify-content:center}
   .lectura{position:static;max-width:none;text-align:left}
+  #promoTapa .rot{display:none}
+  #promoTapa{justify-content:flex-start;padding-top:9%}
   .aviso-video{width:auto;padding:8px 14px;border-radius:999px}
   .aviso-video span{margin:0}
   .aviso-video em{display:none}
@@ -645,7 +652,7 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
 
 <div class="menu" id="menu" hidden>
   <nav aria-label="Menú de secciones">
-    <a href="#video">Video <small>Promo</small></a><a href="#foro">El foro <small>La meta</small></a><a href="#conducen">Quién pregunta <small>IMEF</small></a><a href="#programa">Programa <small>8:00 h</small></a><a href="#ponentes">Ponentes <small>4 paneles</small></a><a href="#videos">Videos <small>Semblanzas</small></a><a href="#costos">Costos <small>Desde $600</small></a><a href="#sede">Sede <small>San Pedro</small></a>
+    <a href="#video">Video <small>1:29</small></a><a href="#foro">El foro <small>La meta</small></a><a href="#conducen">Quién pregunta <small>IMEF</small></a><a href="#programa">Programa <small>8:00 h</small></a><a href="#ponentes">Ponentes <small>4 paneles</small></a><a href="#videos">Videos <small>Semblanzas</small></a><a href="#costos">Costos <small>Desde $600</small></a><a href="#sede">Sede <small>San Pedro</small></a>
   </nav>
   <div class="menu-pie">
     <a class="btn prim" data-registro href="#costos">Registrarme al foro<span class="ico"><svg aria-hidden="true"><use href="#i-flecha"/></svg></span></a>
@@ -689,7 +696,7 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
           <div class="monto"><span class="pre">$</span><span class="odo" id="odoTotal" data-valor="6,263,886.8">6,263,886.8</span></div>
           <div class="unidad">millones de pesos</div>
         </div>
-        <svg class="iso" id="iso" viewBox="-26 0 426 330" role="img" aria-label="Columnas isométricas: ISR 3,288,975.3 millones (52.5 %), IVA 1,768,017.3 millones (28.2 %), IEPS 828,256.0 millones (13.2 %), comercio exterior, ISAN y otros 378,638.2 millones (6.0 %)."></svg>
+        <svg class="iso" id="iso" viewBox="-42 0 442 330" role="img" aria-label="Columnas isométricas: ISR 3,288,975.3 millones (52.5 %), IVA 1,768,017.3 millones (28.2 %), IEPS 828,256.0 millones (13.2 %), comercio exterior, ISAN y otros 378,638.2 millones (6.0 %)."></svg>
       </div>
       <div class="sel" id="sel" aria-live="polite"><span class="q">ISR <i>Impuesto sobre la Renta</i></span><span class="v"><b>$3,288,975.3</b> millones · 52.5 %</span></div>
       <div class="leyenda" id="leyenda" role="group" aria-label="Elige un impuesto">
@@ -735,7 +742,7 @@ dialog.ficha::backdrop{background:rgba(2,3,9,.78);-webkit-backdrop-filter:blur(8
     </div>
     <div class="marco" id="promoMarco">
       <video id="promoVid" playsinline preload="none" poster="video/promo-general.jpg"><source src="video/promo-general.mp4" type="video/mp4"></video>
-      <button class="tapa" type="button" id="promoTapa" aria-label="Reproducir el video promocional del foro"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="rot"><b>Foro Fiscal IMEF · Reformas Fiscales 2027</b><small>Video promocional · con sonido</small></span></button>
+      <button class="tapa" type="button" id="promoTapa" aria-label="Reproducir el video promocional del foro"><span class="play"><svg aria-hidden="true"><use href="#i-play"/></svg></span><span class="rot"><b>Foro Fiscal IMEF · Reformas Fiscales 2027</b><small>Video promocional · 1:29 · con sonido</small></span></button>
       <p class="aviso-video" id="promoAviso" hidden><span>Muy pronto</span><em>El video promocional se publica en estos días. Mientras, <a href="#videos">conoce a los ponentes en video</a>.</em></p>
     </div>
     <div class="pie"><span>Lo presenta Basham, Ringe y Correa, firma legal de primer nivel desde 1912.</span><a class="lnk" href="#videos">Ver las semblanzas en video</a></div>
@@ -1129,8 +1136,8 @@ var P = {"barrera":{"n":"Alejandro Barrera Fernández","c":"Socio","org":"Basham
 /* Videos de la galería. Para sumar uno: sube el MP4 y su póster JPG a video/ y agrega (o activa con listo:true) su fila.
    persona: clave de P, para enlazar la semblanza desde la tarjeta. */
 var VIDEOS = [
-  /* El promo se revisa solo: si video/promo-general.mp4 todavía no existe, la página muestra el póster con aviso y no lo lista. */
-  {grupo:"Promo del foro", archivo:"video/promo-general.mp4", poster:"video/promo-general.jpg", titulo:"Foro Fiscal IMEF 2026", sub:"Video promocional", listo:true, probar:true},
+  /* probar:true hace que la página revise si el MP4 existe antes de listarlo (útil para un video que todavía no se sube). */
+  {grupo:"Promo del foro", archivo:"video/promo-general.mp4", poster:"video/promo-general.jpg", titulo:"Foro Fiscal IMEF 2026", sub:"Video promocional · 1:29", listo:true},
   {grupo:"Semblanzas de ponentes", persona:"barrera", archivo:"video/sem-barrera.mp4", poster:"video/sem-barrera.jpg", titulo:"Alejandro Barrera Fernández", sub:"Panel ISR · 8:30 h", listo:true},
   {grupo:"Semblanzas de ponentes", persona:"torres", archivo:"video/sem-torres.mp4", poster:"video/sem-torres.jpg", titulo:"Luisa Fernanda Torres Hernández", sub:"Panel ISR · 8:30 h", listo:true},
   {grupo:"Semblanzas de ponentes", persona:"hernandez", archivo:"video/sem-hernandez.mp4", poster:"video/sem-hernandez.jpg", titulo:"Marcelo Hernández", sub:"Panel ISR · 8:30 h", listo:true},
@@ -1253,12 +1260,14 @@ var INICIO = Date.parse("2026-11-17T08:00:00-06:00"), FIN = Date.parse("2026-11-
     el("polygon",{points:b.f,class:"base-f"},svg); el("polygon",{points:b.l,class:"base-l"},svg); el("polygon",{points:b.top,class:"base-top"},svg);
     for(var x=bx0+10;x<bx1-4;x+=10){ var may=((x-bx0)%50===0), a=pr(x,by1,0), c=pr(x,by1-(may?9:5),0);
       el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:c[0].toFixed(1),y2:c[1].toFixed(1),class:"tick"+(may?" may":"")},svg) }
-    /* poste con escala en billones */
-    var px=-22,py=-22, pc=caja(px-3,px+3,py-3,py+3,0,HMAX*1.08);
-    el("polygon",{points:pc.f,class:"poste"},svg); el("polygon",{points:pc.l,class:"poste-l"},svg);
-    [1,2,3].forEach(function(b){ var z=HMAX*b*1e6/MAXV, a=pr(px+3,py+3,z), c=pr(px+13,py+3,z);
-      el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:c[0].toFixed(1),y2:c[1].toFixed(1),class:"tick may"},svg);
-      var t=el("text",{x:(a[0]-8).toFixed(1),y:(a[1]+3).toFixed(1),"text-anchor":"end",class:"esc"},svg); t.textContent=b+" bdp" });
+  }
+  /* Escala en billones de pesos: poste delante y a la izquierda del ISR, dibujado después de las columnas para que nada lo tape */
+  function dibujaEscala(){
+    var px=-22,py=D+10, pc=caja(px-3,px+3,py-3,py+3,0,HMAX*1.08), g=el("g",{"aria-hidden":"true"},svg);
+    el("polygon",{points:pc.f,class:"poste"},g); el("polygon",{points:pc.l,class:"poste-l"},g); el("polygon",{points:pc.top,class:"poste"},g);
+    [1,2,3].forEach(function(b){ var z=HMAX*b*1e6/MAXV, a=pr(px-3,py+3,z);
+      el("line",{x1:a[0].toFixed(1),y1:a[1].toFixed(1),x2:(a[0]-7).toFixed(1),y2:a[1].toFixed(1),class:"tick may"},g);
+      var t=el("text",{x:(a[0]-10).toFixed(1),y:(a[1]+3.5).toFixed(1),"text-anchor":"end",class:"esc"},g); t.textContent=b+(b===1?" billón":" billones") });
   }
   function dibujaCols(){
     IMP.forEach(function(m,i){
@@ -1282,7 +1291,7 @@ var INICIO = Date.parse("2026-11-17T08:00:00-06:00"), FIN = Date.parse("2026-11-
       c.a.setAttribute("points",pts([[x,D,0],[x,D,h],[x,0,h],[x+W,0,h],[x+W,D,h],[x,D,h]])+" "+pts([[x+W,D,h],[x+W,D,0]]));
     });
   }
-  dibujaBase(); dibujaCols(); pintaCols();
+  dibujaBase(); dibujaCols(); pintaCols(); dibujaEscala();
   var objetivo=IMP.map(function(m){return HMAX*m.v/MAXV});
   function crece(){
     if(quieto){ alturas=objetivo.slice(); pintaCols(); return; }
